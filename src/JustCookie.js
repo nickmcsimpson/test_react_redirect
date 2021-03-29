@@ -8,7 +8,7 @@ function Cookie() {
         'Authorization': 'Bearer JWT_TOKEN'
       }
     }).then(() => {
-      fetch('http://local.channelmix.com:5050/backend/api/swagger/openapi.json', {
+      fetch('https://datorama.qa.channelmix.com:5500//backend/api/swagger/openapi.json', {
         credentials: 'include'
       });
     });
