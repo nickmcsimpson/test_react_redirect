@@ -4,8 +4,7 @@ import './App.css';
 
 function TestTab() {
   useEffect(() => {
-    const domain = window.location.hostname
-    fetch(`https://datorama.qa.channelmix.com:5500/auth-urls?clientId=3973&redirectPath=http://${domain}/landing&sourceId=8`, {
+    fetch(`https://datorama.qa.channelmix.com:5500/auth-urls?clientId=3973&redirectPath=/landing&sourceId=8`, {
       headers: {
         'Authorization': 'Bearer JWT_TOKEN'
       }
