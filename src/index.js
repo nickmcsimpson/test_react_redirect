@@ -1,13 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Main from './Main';
+import Tab from './Tab';
+import Landing from './Landing'
+import TestTab from './TestTab';
+
+function App() {
+  return (
+      <main>
+          <Switch>
+              <Route path="/" component={Main} exact />
+              <Route path="/tab" component={Tab} />
+              <Route path="/return" component={Landing} />
+              <Route path="/test_tab" component={TestTab} />
+          </Switch>
+      </main>
+  )
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+      <App />
+  </BrowserRouter>, 
   document.getElementById('root')
 );
 
