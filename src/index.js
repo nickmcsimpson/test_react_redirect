@@ -7,6 +7,7 @@ import Main from './Main';
 import Tab from './Tab';
 import Landing from './Landing'
 import TestTab from './TestTab';
+import Cookie from './JustCookie';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route path="/tab" component={Tab} />
               <Route path="/return" component={Landing} />
               <Route path="/test_tab" component={TestTab} />
+              <Route path="/cookie" component={Cookie} />
           </Switch>
       </main>
   )

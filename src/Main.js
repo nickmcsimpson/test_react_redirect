@@ -17,9 +17,13 @@ class Main extends Component {
   }
 
   Opentab() {
-    // window.open('/test_tab')
     this.setState({auth_clicked: true, returned: false, auth_return_params: ''});
-    window.open('/tab');
+    let domain = window.location.hostname
+    if(domain.includes('heroku')) {
+        window.open('/tab');
+    } else {
+        window.open('/test_tab')
+    }
   }
 
   GetData(data) {

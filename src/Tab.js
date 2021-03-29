@@ -9,7 +9,9 @@ function Tab() {
         'Authorization': 'Bearer JWT_TOKEN'
       }
     })
-    .then((res) => res.json())
+    .then((res) => {
+        return res.json()
+    })
     .then((json) => {
       let url = json['data'][0]['attributes']['auth_url']
       window.location.assign(url, {

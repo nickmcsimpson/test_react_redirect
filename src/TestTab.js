@@ -9,7 +9,10 @@ function TestTab() {
         'Authorization': 'Bearer JWT_TOKEN'
       }
     })
-    .then((res) => res.json())
+    .then((res) => {
+        debugger;
+        return res.json()
+    })
     .then((json) => {
       window.location.assign('/return?credential_id=10269&client_id=3973&source_id=8&status=success');
     });
