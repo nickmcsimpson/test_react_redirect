@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Cookie from './JustCookie';
 
 function Tab() {
   useEffect(() => {
@@ -14,9 +15,8 @@ function Tab() {
     })
     .then((json) => {
       let url = json['data'][0]['attributes']['auth_url']
-      window.location.assign(url, {
-        credentials: 'include'
-      });
+      
+      window.location.href = url;
     });
   });
   return null;

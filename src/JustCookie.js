@@ -5,7 +5,8 @@ function Cookie() {
   useEffect(() => {
     fetch('https://datorama.qa.channelmix.com:5500/auth-urls?clientId=3973&redirectPath=/landing&sourceId=8', {
       headers: {
-        'Authorization': 'Bearer JWT_TOKEN'
+        'Authorization': 'Bearer JWT_TOKEN',
+        'Set Cookie': true,
       }
     }).then(() => {
       fetch('https://datorama.qa.channelmix.com:5500//backend/api/swagger/openapi.json', {
