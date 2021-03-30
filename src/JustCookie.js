@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 
 function Cookie() {
+    // Just testing whether or not the cookie was being forwarded correctly.
   useEffect(() => {
     fetch('https://datorama.qa.channelmix.com:5500/auth-urls?clientId=3973&redirectPath=/landing&sourceId=8', {
         credentials: 'include',  

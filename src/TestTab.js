@@ -12,7 +12,6 @@ function TestTab() {
         return res.json()
     })
     .then((json) => {
-        debugger;
       window.location.href = '/return?credential_id=10269&client_id=3973&source_id=8&status=success';
     });
   });

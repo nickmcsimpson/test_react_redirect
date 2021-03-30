@@ -5,6 +5,7 @@ class Main extends Component {
   constructor(props) {
     super(props);
     let broadcast = new BroadcastChannel('test_channel');
+    // Setup broadcast listener:
     broadcast.onmessage  = ({ data }) => { 
         this.GetData(data);
     }
@@ -15,6 +16,7 @@ class Main extends Component {
   }
 
   Opentab() {
+    //   Launch Oauth in new tab
     this.setState({auth_clicked: true, returned: false, auth_return_params: ''});
     let domain = window.location.hostname
     if(domain.includes('heroku')) {

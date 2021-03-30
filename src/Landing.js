@@ -6,7 +6,8 @@ class Landing extends Component {
     super(props);
     const channel = new BroadcastChannel('test_channel');
 
-    channel.postMessage(this.props.location.search);
+    //Sends the path parameters to the channel for our original tab to open
+    channel.postMessage(this.props.location.search); 
   }
 
   render() {
