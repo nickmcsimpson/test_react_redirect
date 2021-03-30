@@ -14,7 +14,7 @@ class Landing extends Component {
     return (
             <div> 
                 <h2>Welcome back!</h2>
-                <button onClick={window.close}>Close</button>
+                <p>Go checkout out the message I left for you on the main tab!</p>
             </div>
         )
   }
