@@ -5,7 +5,6 @@ import './App.css';
 class Landing extends Component {
   constructor(props) {
     super(props);
-    console.log("We are back from auth");
     const channel = new BroadcastChannel('test_channel');
 
     channel.postMessage(this.props.location.search);
