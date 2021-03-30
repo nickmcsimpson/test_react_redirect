@@ -1,7 +1,5 @@
 import { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Tab from './Tab';
 
 class Main extends Component {
   constructor(props) {

@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Cookie from './JustCookie';
 
 function Tab() {
   useEffect(() => {

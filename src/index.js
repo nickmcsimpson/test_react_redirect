@@ -15,7 +15,7 @@ function App() {
           <Switch>
               <Route path="/" component={Main} exact />
               <Route path="/tab" component={Tab} />
-              <Route path="/return" component={Landing} />
+              <Route path="/landing" component={Landing} />
               <Route path="/test_tab" component={TestTab} />
               <Route path="/cookie" component={Cookie} />
           </Switch>
