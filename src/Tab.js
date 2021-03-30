@@ -6,7 +6,8 @@ import Cookie from './JustCookie';
 function Tab() {
   useEffect(() => {
     fetch('https://datorama.qa.channelmix.com:5500/auth-urls?clientId=3973&redirectPath=https://react-nick.herokuapp.com/landing&sourceId=8', {
-      headers: {
+        credentials: 'include',
+        headers: {
         'Authorization': 'Bearer JWT_TOKEN'
       }
     })
